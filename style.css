@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .profiles {
+    padding: 20px;
+  }
+  
+  .profiles ul.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profiles li {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profiles img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  .profiles h3, .profiles p {
+    margin: 0;
+  }
+  
+  .profiles a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profiles li:hover {
+    transform: scale(1.05);
+  }
+  
+  .profiles li:nth-child(odd) {
+    animation: animateRight 0.5s ease-in-out forwards;
+  }
+  
+  .profiles li:nth-child(even) {
+    animation: animateRight 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes animateLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes animateRight {
+    from {
+      opacity: 0;
+      transform: translateX(5)}}
+  
